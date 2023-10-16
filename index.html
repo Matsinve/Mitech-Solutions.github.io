@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MiTech Solutions</title>
+  <link rel="stylesheet" href="Mit.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .page {
+      display: none;
+    }
+    .page.active {
+      display: block;
+    }
+    .button-container {
+      margin-bottom: 10px;
+      background: black;
+      font-weight: bold;
+    }
+    .button {
+      padding: 3px 5px;
+      margin-right: 10px;
+      background: transparent;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      border: black 1px solid;
+      
+    }
+  </style>
+  <script>
+    function showPage(pageId) {
+      // Hide all pages
+      var pages = document.getElementsByClassName('page');
+      for (var i = 0; i < pages.length; i++) {
+        pages[i].classList.remove('active');
+      }
+
+      // Show the selected page
+      var page = document.getElementById(pageId);
+      page.classList.add('active');
+    }
+  </script>
+</head>
+<body>
+    
+    
+  <!-- Page 1 -->
+  <div id="page1" class="page active">
+   
+   
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">MiTech</span> Solutions</h1>
+        </div>
+        <nav>
+            
+            <div class="button-container">
+      <button class="button" onclick="showPage('page2')">SERVICES</button>
+      <button class="button" onclick="showPage('page3')">ABOUT</button>
+    </div>
+    
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Affordable Professional Graphic design</h1>
+        <p>We specialize in a wide range of graphic design services, including logo design, music artworks design, web design, print design, branding, illustration, and motion graphics.</div>
+    </section>
+
+    
+    <section id="FBPage">
+      <div class="container">
+        <h1>Follow us on</h1>
+       <div class="follow">
+           <h4><span><a href="https://www.facebook.com/profile.php?id=100095025802379">FACEBOOK &nbsp; &nbsp;</a></span><span><a href="">TWITTER &nbsp; &nbsp;</a></span> <span><a href="">INSTAGRAM</a></span></h4>
+       </div>
+      </div>
+    </section>
+    
+    
+    
+
+    <section id="boxes">
+      <div class="container">
+       
+        <div class="box">
+          <img src="logo_brush.png">
+          <h3>Graphic Design</h3>
+          <p>Experience the power of captivating visuals with our exceptional graphic design services, tailored to bring your ideas to life and make a lasting impact.</p>
+        </div>
+       
+        <div class="box">
+          <img src="logo_html.png">
+          <h3>HTML5 Markup</h3>
+          <p>Experience the power and beauty of exceptional HTML5 markup design that will elevate your website to new heights of functionality and aesthetics.</p>
+        </div>
+        <div class="box">
+          <img src="logo_css.png">
+          <h3>CSS3 Styling</h3>
+          <p>Unlock the full potential of your website with our expert CSS3 styling design service, creating visually stunning and engaging web experiences that captivate your audience.</div>
+        <div class="box">
+          <img src="logo_vid.png">
+          <h3>Video Production</h3>
+          <p>Experience the power of visual storytelling with our captivating lyrics video production and expertly crafted business videos. Let us bring your ideas to life and leave a lasting impression on your audience.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p><b>Mitech Solutions</b> &copy; 2023<marquee> <em>Ultra services every time </em></marquee> </p>
+    </footer>
+    
+    
+    
+  </div>
+
+
+
+
+  <!-- Page 2:  SERVICES-->
+  <div id="page2" class="page">
+    <header>
+      <div class="container">
+        <div id="branding">
+               <h1><span class="highlight">MiTech</span> Solutions</h1>
+            </div>
+        <nav>
+            
+               <div class="button-container">
+      <button class="button" onclick="showPage('page1')">HOME</button>
+      <button class="button" onclick="showPage('page3')">ABOUT</button>
+    </div> 
+            
+            
+        </nav>
+      </div>
+    </header>
+
+   
+       <section id="FBPage">
+      <div class="container">
+        <h1>Follow us on</h1>
+       <div class="follow">
+           <h4><span><a href="https://www.facebook.com/profile.php?id=100095025802379">FACEBOOK &nbsp; &nbsp;</a></span><span><a href="">TWITTER &nbsp; &nbsp;</a></span> <span><a href="">INSTAGRAM</a></span></h4>
+       </div>
+      </div>
+    </section>
+   
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">Services</h1>
+          <ul id="services">
+            <li>
+              <h3>Graphics designing</h3>
+              <p>Design with us to day.</p>
+						  <p>Pricing: Varies</p>
+            </li>
+            <li>
+              <h3>Website design</h3>
+              <p>We design responsible website with stunning graphics</p>
+						  <p>Pricing: varies</p>
+            </li>
+            <li>
+              <h3>Video production</h3>
+              <p>We edit and create videos.</p>
+						  <p>Pricing: varies</p>
+            </li>
+          </ul>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+           
+  <h3>Get A Quote</h3>
+  <form class="quote" action="mailto: matsinve@gmail.com" method="post" enctype="text/plain">
+    <div>
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="Name" placeholder="Name" required>
+    </div>
+    
+    <div>
+      <label for="Country">Country</label><br>
+      <input type="text" id="country" name="Country" placeholder="Your country" required>
+    </div>
+    
+    <div>
+      <label for="message">Message</label><br>
+      <textarea id="message" name="Message" placeholder="Message" required></textarea>
+    </div>
+    <button class="button_1" type="submit">Send</button>
+  </form>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+
+    <footer>
+      <p><b>Mitech Solutions</b> &copy; 2023</p>
+    </footer>
+ 
+  </div>
+
+
+
+
+
+
+  <!-- ABOUT PAGE-->
+  <div id="page3" class="page">
+
+    
+    <header>
+      <div class="container">
+        <div id="branding">
+      <h1><span class="highlight">MiTech</span> Solutions</h1>
+    
+        </div>
+        <nav>    <div class="button-container">
+      <button class="button" onclick="showPage('page1')">HOME</button>
+      <button class="button" onclick="showPage('page2')">SERVICES</button>
+    </div>
+        </nav>
+      </div>
+    </header>
+    <section id="FBPage">
+      <div class="container">
+        <h1>Contact us on</h1>
+       <div class="follow">
+           <h4>
+               
+         <span><a href="https://www.facebook.com/real.realguy.9">FACEBOOK &nbsp; &nbsp;</a></span>   
+               <span>  <a href="https://wa.me/+265992046094">WHATSAPP &nbsp; &nbsp;</a></span><span><a href="mailto:matsinve@gmail.com">EMAIL</a></span></h4>
+       </div>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">About Us</h1>
+          <p>Content will be added, content will be added, Content will be added, content will be added, Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added.
+          </p>
+          
+          <p class="dark">Content will be added, content will be added, Content will be added, content will be added, Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added,Content will be added, content will be added.
+          </p>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>What We Do</h3>
+            <p>
+                Content will be added, content will be added, Content will be added, content will be added, Content will be added, content will be added,Content will be added, content will be added.</p>
+        
+        <br><br><br>
+            
+  <div class="contact">
+      <a href="https://www.facebook.com/profile.php?id=100095025802379">Facebook</a>
+  <br>
+  <a href="https://wa.me/+265992046094">WhatsApp</a><br>
+  <a href="mailto:matsinve@gmail.com">Send an Email</a>
+  </div>
+     
+          </div>
+        </aside>
+      </div>
+    </section>
+
+
+    <footer>
+      <p><b>Mitech Solutions</b> &copy; 2023</p>
+    </footer>
+    
+  </div>
+  
+  
+  
+
+  <script>
+    // Show initial page (Page 1)
+    showPage('page1');
+  </script>
+</body>
+</html>
